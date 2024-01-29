@@ -1,0 +1,13 @@
+.cardProducto img{
+    width: 200px;
+}
+.cardProducto{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
