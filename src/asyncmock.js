@@ -4,35 +4,40 @@ const productos = [
         nombre:"Batidora Planetaria Atma" ,
         precio: 100000,
         img: "../img/batidora planetaria atma bpat21grp.jpg",
-        categoria: "electro"
+        categoria: "electro",
+        stock: 10
     },
     {
         id: '2',
         nombre:"Cloudbook 14'' Lenovo",
         precio: 130000,
         img:"../img/Cloudbook 14'' lenovo IP1-81VU0065.jpeg",
-        categoria: "tecno"
+        categoria: "tecno",
+        stock: 3
     },
     {
         id: '3',
         nombre:"Joystick Inalámbrico PS4",
         precio: 40000,
         img:"../img/Joystick dorado ps4.jpg",
-        categoria: "tecno"
+        categoria: "tecno",
+        stock: 40
     },
     {
         id: '4',
         nombre:"Hidrolavadora 1200W Daewoo",
         precio: 82000,
         img:"../img/Hidrolavadora 1200W Daewoo DAX1130.jpeg",
-        categoria: "electro"
+        categoria: "electro",
+        stock: 15
     },
     {
         id: '5',
         nombre:"Luz Proton Led Ecosmart",
         precio: 25000,
         img:"../img/Luz proton led ecosmart es-3600p.jpg",
-        categoria: "tecno"
+        categoria: "tecno",
+        stock: 22
     }
 ]
 
