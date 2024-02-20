@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZjQejZhC5tkedWu6CZzm1wxC48LFg6KM",
+  apiKey: import.meta.env.VITE_API_KEY_FIREBASE_CONFIG,
   authDomain: "sala-hogar.firebaseapp.com",
   projectId: "sala-hogar",
   storageBucket: "sala-hogar.appspot.com",

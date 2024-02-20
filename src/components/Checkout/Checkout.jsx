@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../services/config";
+import Swal from "sweetalert2";
 import { collection, addDoc } from "firebase/firestore";
 
 const Checkout = () => {
@@ -44,6 +45,14 @@ const Checkout = () => {
             .then(docRef => {
                 setOrdenId(docRef.id);
                 vaciarCarrito();
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "¡Gracias por tu compra!",
+                    text: `Tu número de orden es: ${docRef.id}`,
+                    showConfirmButton: false,
+                    timer: 1800
+                  });
             })
             .catch(error =>{
                 console.log("Error al crear la orden de compra", error);
@@ -91,10 +100,6 @@ const Checkout = () => {
             }
 
             <button>Finalizar orden</button>
-
-            {
-                ordenId && <strong>Gracias por su compra! Tu numero de orden es: {ordenId}</strong>
-            }
         </form>
     </div>
   )
